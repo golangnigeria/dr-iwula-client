@@ -3,7 +3,6 @@ import { Snippet } from "@heroui/snippet";
 import { Code } from "@heroui/code";
 import { button as buttonStyles } from "@heroui/theme";
 
-import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 
@@ -11,14 +10,13 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Make&nbsp;</span>
-        <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
+        <span className={title()}>Empowering&nbsp;</span>
+        <span className={title({ color: "violet" })}>Health&nbsp;</span>
         <br />
-        <span className={title()}>
-          websites regardless of your design experience.
-        </span>
+        <span className={title()}>Through Knowledge and Care.</span>
         <div className={subtitle({ class: "mt-4" })}>
-          Beautiful, fast and modern React UI library.
+          Expert medical consultations, trusted health articles, and online
+          wellness courses — all in one place.
         </div>
       </div>
 
@@ -31,20 +29,21 @@ export default function Home() {
             variant: "shadow",
           })}
         >
-          Documentation
+          Book Consultation
         </Link>
         <Link
           isExternal
-          className={buttonStyles({ variant: "bordered", radius: "full" })}        >
+          className={buttonStyles({ variant: "bordered", radius: "full" })}
+        >
           <GithubIcon size={20} />
-          GitHub
+          Visit Website
         </Link>
       </div>
 
       <div className="mt-8">
         <Snippet hideCopyButton hideSymbol variant="bordered">
           <span>
-            Get started by editing <Code color="primary">app/page.tsx</Code>
+            Dr. Iwula’s Health Platform.
           </span>
         </Snippet>
       </div>

@@ -114,6 +114,8 @@ export const Navbar = () => {
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         
+        <NavbarMenuToggle />
+        <ThemeSwitch />
         <Button
             isExternal
             as={Link}
@@ -124,8 +126,6 @@ export const Navbar = () => {
           >
             Login
           </Button>
-        <ThemeSwitch />
-        <NavbarMenuToggle />
       </NavbarContent>
 
       <NavbarMenu>
